@@ -2,9 +2,12 @@ import unittest
 
 def factorial(value):
     resultado = 1
-    while value > 1 :
-        resultado= resultado * (value)
-        value = value -1
+    while value > 1:
+        resultado *= value 
+        value -= 1
+        
+        if value == 1 :
+            break
     return resultado
 
 
